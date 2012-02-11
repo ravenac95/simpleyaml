@@ -1,5 +1,5 @@
 
-import yaml
+import simpleyaml as yaml
 
 def test_marks(marks_filename, verbose=False):
     inputs = open(marks_filename, 'rb').read().split('---\n')[1:]

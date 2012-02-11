@@ -1,5 +1,5 @@
 
-import yaml.reader
+import simpleyaml as yaml
 import codecs
 
 def _run_reader(data, verbose):

@@ -327,18 +327,12 @@ if __name__ == '__main__':
         classifiers=CLASSIFIERS,
 
         package_dir={'': {2: 'lib', 3: 'lib3'}[sys.version_info[0]]},
-        packages=['yaml'],
-        ext_modules=[
-            Extension('_yaml', ['ext/_yaml.pyx'],
-                'libyaml', "LibYAML bindings", LIBYAML_CHECK,
-                libraries=['yaml']),
-        ],
+        packages=['simpleyaml'],
+        ext_modules=[],
 
         distclass=Distribution,
 
         cmdclass={
-            'build_ext': build_ext,
-            'bdist_rpm': bdist_rpm,
             'test': test,
         },
     )

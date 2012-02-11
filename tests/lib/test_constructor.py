@@ -1,5 +1,5 @@
 
-import yaml
+import simpleyaml as yaml
 import pprint
 
 import datetime
@@ -7,7 +7,6 @@ try:
     set
 except NameError:
     from sets import Set as set
-import yaml.tokens
 
 def execute(code):
     exec code

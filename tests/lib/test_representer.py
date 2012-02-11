@@ -1,5 +1,5 @@
 
-import yaml
+import simpleyaml as yaml
 import test_constructor
 import pprint
 

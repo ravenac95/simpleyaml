@@ -1,5 +1,5 @@
 
-import yaml, test_emitter
+import simpleyaml as yaml, test_emitter
 
 def test_loader_error(error_filename, verbose=False):
     try:
@@ -50,7 +50,7 @@ test_emitter_error.unittest = ['.emitter-error']
 def test_dumper_error(error_filename, verbose=False):
     code = open(error_filename, 'rb').read()
     try:
-        import yaml
+        import simpleyaml as yaml
         from StringIO import StringIO
         exec code
     except yaml.YAMLError, exc:

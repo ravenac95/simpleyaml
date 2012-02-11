@@ -1,5 +1,5 @@
 
-import yaml
+import simpleyaml as yaml
 
 class AnInstance:
 

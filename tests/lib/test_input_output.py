@@ -1,5 +1,5 @@
 
-import yaml
+import simpleyaml as yaml
 import codecs, StringIO, tempfile, os, os.path
 
 def _unicode_open(file, encoding, errors='strict'):
