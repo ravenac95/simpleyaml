@@ -1,5 +1,5 @@
 
-import sys, yaml, test_appliance
+import sys, simpleyaml as yaml, test_appliance
 
 def main(args=None):
     collections = []
